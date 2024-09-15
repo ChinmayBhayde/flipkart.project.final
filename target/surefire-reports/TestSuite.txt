@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 32.67 s <<< FAILURE! -- in TestSuite
+runner.campaignRunner.runScenario["User browse and selects an open position", "Selecting an open position"](1) -- Time elapsed: 16.42 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at POM.CareerPage.searchJob(CareerPage.java:27)
+	at steps.CareerPageSteps.user_enter_text_in_search_box(CareerPageSteps.java:38)
+	at ✽.user enter text "Java Full Stack Developer" in search box(file:///Users/machd/eclipse-workspace2/com.project/src/test/resources/uifeature/CareerPage.feature:5)
+
+runner.campaignRunner.runScenario["Click on career option on home page", "Home page functionality"](2) -- Time elapsed: 13.34 s <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
+Host info: host: 'CPBs-MacBook-Air.local', ip: '2401:4900:57d3:57ec:74ba:731d:bd17:34a0%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
+	at launchBrowser.driverFactory.openBrowser(driverFactory.java:17)
+	at steps.HomePageSteps.user_is_at_landing_page(HomePageSteps.java:20)
+	at ✽.user is at landing page(file:///Users/machd/eclipse-workspace2/com.project/src/test/resources/uifeature/HomePage.feature:3)
+

@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 09 21:21:11 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>31 seconds (31501 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.campaignRunner.runScenario()'><b>runScenario</b><br>Test class: runner.campaignRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on career option on home page", "Home page functionality"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
+Host info: host: &apos;CPBs-MacBook-Air.local&apos;, ip: &apos;2401:4900:57d3:57ec:74ba:731d:bd17:34a0%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at launchBrowser.driverFactory.openBrowser(driverFactory.java:17)
+	at steps.HomePageSteps.user_is_at_landing_page(HomePageSteps.java:20)
+	at ✽.user is at landing page(file:///Users/machd/eclipse-workspace2/com.project/src/test/resources/uifeature/HomePage.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace168670597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace168670597'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
+Host info: host: &apos;CPBs-MacBook-Air.local&apos;, ip: &apos;2401:4900:57d3:57ec:74ba:731d:bd17:34a0%en0&apos;
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at launchBrowser.driverFactory.openBrowser(driverFactory.java:17)
+	at steps.HomePageSteps.user_is_at_landing_page(HomePageSteps.java:20)
+	at ✽.user is at landing page(file:///Users/machd/eclipse-workspace2/com.project/src/test/resources/uifeature/HomePage.feature:3)
+</pre></div></td>
+<td>13</td>
+<td>runner.campaignRunner@18d87d80</td></tr>
+<tr>
+<td title='runner.campaignRunner.runScenario()'><b>runScenario</b><br>Test class: runner.campaignRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User browse and selects an open position", "Selecting an open position"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at POM.CareerPage.searchJob(CareerPage.java:27)
+	at steps.CareerPageSteps.user_enter_text_in_search_box(CareerPageSteps.java:38)
+	at ✽.user enter text &quot;Java Full Stack Developer&quot; in search box(file:///Users/machd/eclipse-workspace2/com.project/src/test/resources/uifeature/CareerPage.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace179233442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace179233442'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at POM.CareerPage.searchJob(CareerPage.java:27)
+	at steps.CareerPageSteps.user_enter_text_in_search_box(CareerPageSteps.java:38)
+	at ✽.user enter text &quot;Java Full Stack Developer&quot; in search box(file:///Users/machd/eclipse-workspace2/com.project/src/test/resources/uifeature/CareerPage.feature:5)
+</pre></div></td>
+<td>16</td>
+<td>runner.campaignRunner@18d87d80</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-09T21:21:11 IST" name="Suite" finished-at="2024-09-09T21:21:42 IST" duration-ms="31501">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.campaignRunner@18d87d80]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-09-09T21:21:11 IST" name="Test" finished-at="2024-09-09T21:21:42 IST" duration-ms="31501">
+      <class name="runner.campaignRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.campaignRunner@18d87d80]" started-at="2024-09-09T21:21:11 IST" name="setUpClass" finished-at="2024-09-09T21:21:12 IST" duration-ms="1629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1c7f96b1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.campaignRunner@18d87d80]" started-at="2024-09-09T21:21:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-09T21:21:29 IST" duration-ms="16411" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User browse and selects an open position"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Selecting an open position"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at POM.CareerPage.searchJob(CareerPage.java:27)
+at steps.CareerPageSteps.user_enter_text_in_search_box(CareerPageSteps.java:38)
+at ✽.user enter text "Java Full Stack Developer" in search box(file:///Users/machd/eclipse-workspace2/com.project/src/test/resources/uifeature/CareerPage.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.campaignRunner@18d87d80]" started-at="2024-09-09T21:21:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-09T21:21:42 IST" duration-ms="13343" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Click on career option on home page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Home page functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
+Host info: host: 'CPBs-MacBook-Air.local', ip: '2401:4900:57d3:57ec:74ba:731d:bd17:34a0%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
+Host info: host: 'CPBs-MacBook-Air.local', ip: '2401:4900:57d3:57ec:74ba:731d:bd17:34a0%en0'
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.2'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:84)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:80)
+at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:57)
+at launchBrowser.driverFactory.openBrowser(driverFactory.java:17)
+at steps.HomePageSteps.user_is_at_landing_page(HomePageSteps.java:20)
+at ✽.user is at landing page(file:///Users/machd/eclipse-workspace2/com.project/src/test/resources/uifeature/HomePage.feature:3)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.campaignRunner@18d87d80]" started-at="2024-09-09T21:21:42 IST" name="tearDownClass" finished-at="2024-09-09T21:21:42 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.campaignRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
